@@ -154,7 +154,6 @@ let iphoneScroll = gsap.to("#iphone_screen",{
     y:-710,
     
 scrollTrigger:{
-        markers: true,
         trigger:"#functions_container",
         start: "61% center",
         end: "+=899",
