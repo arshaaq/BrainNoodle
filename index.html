@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+
+        
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
+        <script src="javascript.js" defer></script>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+    
+    
+
+    <button id="nav" class="nav_toggle" onclick="toggleNav()"></button>    
+    <div id="header">
+        <img id="title" src="UI elements/title.png">
+    </div>
+
+    <div id="nav_dropdown" class="nav_dropdown_hidden">
+        <p id="menu">menu</p>
+        <div class="nav_container"> 
+            <li><a id="nav_link1" class="nav_link_hide">home</a></li>
+            <li><a id="nav_link2" class="nav_link_hide">about us</a></li>
+            <li><a id="nav_link3" class="nav_link_hide">contact</a></li>
+        </div>
+    </div>   
+
+    
+
+    <div id="title_container">
+       
+        <div id="iphone_container">
+        <img src="UI elements/iphone_1.png" id="iphone_1" class="iphone">
+        <img src="UI elements/iphone_2.png" id="iphone_2" class="iphone">
+        <img src="UI elements/iphone_3.png" id="iphone_3" class="iphone">
+        </div>
+        <div id="title_text_container">
+            <h1>The 
+                <svg id="mark1" width="180" height="105" viewBox="0 0 180 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M177 77C146 106 63.0001 111 28.0001 82.9998C-36.4977 31.4011 37 -4.00003 122 4.00001C167 15.0001 188.8 38.9998 168 66.9998C147.2 94.9998 65.0001 101 35.0001 101" stroke="#FF4444" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            <span id="best">
+                Best
+            </span>
+            Way To 
+            <svg id="mark2" width="150" height="17" viewBox="0 0 150 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 3H147M16 14H117" stroke="#4385FF" stroke-width="5" stroke-linecap="round"/>
+                </svg>                
+                Train Your Brain
+            <svg id="mark3" width="32" height="64" viewBox="0 0 32 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 57C6.85205 58.1836 5.9959 58 5 58M11 41C11.8529 34.1768 16.9694 25.3189 19.7778 19C21.7254 14.6179 24.5076 10.4771 26 6" stroke="#FF9E43" stroke-width="10" stroke-linecap="round"/>
+                </svg>
+                
+            </h1>
+            <p>Start your Brain Noodle training today to enhance your cognitive skills and overall quality of life.</p>
+
+            <div id="icons_container">
+            <img src="UI elements/applestore_icon.png">
+            <img src="UI elements/googlestore_icon.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="benefits_container">
+
+        <div id="benefits_circle">
+        </div>
+        <div id="benefits_list_container">
+
+            <div id="benefit_thinking" class="benefit">
+                <img src="UI elements/benefits_thinking.png">
+                <p>Increase, thinking rate by 20% in just under 20 days!</p>
+            </div>
+            <div id="benefit_handeye" class="benefit">
+                <img src="UI elements/benefits_icons_handeye.svg">
+                <p>Improves hand-eye coordination with just a few taps away.</p>
+            </div>
+            <div id="benefit_critical" class="benefit">
+                <img src="UI elements/benefits_critical.png">
+                <p>Do it for yourself and your mental capacity. Leading to higher critical thinking skills.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="functions_container">
+        <div id="iphone_container_2">
+            <img id="iphone_frame" src="UI elements/iphone_2-2.png">
+            <div id="iphone_screen_container">
+                <img id="iphone_screen"src="UI elements/iphone_screen.png">
+            </div>
+        </div>
+        <div id="function_description_container">
+        <h1 id="function_number">Over <span id="one_hundred">0</span> <br>Exercises To Try!</h1>
+        <p id="function_text">Your mind is a mess. But with Brain Noodle, having a wrinkly brain is a few taps away. 
+         Start playing for free and say goodbye to that smooth brain!</p>
+        <button id="function_button">Start For Free!</button>
+        
+        </div>
+
+
+    </div>
+    
+    <div id="end_container">
+        <div id="end_text_container">
+            <div id="end_text_grid">
+                Join millions getting more brain power with
+                <img id="end_title" src="UI elements/title.png">
+
+                <div id="icons_container_end">
+                    <img src="UI elements/applestore_icon.png">
+                    <img src="UI elements/googlestore_icon.png">
+                </div>
+
+            </div>
+        </div>
+        <div id="ratings_container">
+            <div id="ratings_1">
+                <img src="UI elements/ratings_stars.png" id="ratings_stars">
+                <p class="rating_p"><span id="p1"></span>.9 Stars</p>
+                <p class="rating_s">Average rating</p>
+                
+            </div>
+            <div id="ratings_2">
+                <p class="rating_p"><span id="p2"></span>K Ratings</p>
+                <p class="rating_s">On IOS and Google Play</p>                
+
+            </div>
+            <div id="ratings_3">
+                <p class="rating_p"><span id="p3"></span>M Downloads</p>
+                <p class="rating_s">Across all platforms</p>
+            </div>
+        </div>
+        <img src="rounded_triangle_half.png" class="rounded_triangle">
+
+        <div id="noodle_friends_container">
+            <img src="UI elements/yellow_mascot.png" class="noodle_friends">
+            <img src="UI elements/red_mascot.png" class="noodle_friends">
+            <img src="UI elements/blue_mascot.png" class="noodle_friends">
+            <img src="UI elements/yellow_mascot.png" class="noodle_friends">
+            <img src="UI elements/red_mascot.png" class="noodle_friends">
+            <img src="UI elements/blue_mascot.png" class="noodle_friends">
+            <img src="UI elements/yellow_mascot.png" class="noodle_friends">
+            <img src="UI elements/red_mascot.png" class="noodle_friends">
+            <img src="UI elements/blue_mascot.png" class="noodle_friends">
+
+
+
+        </div>
+    </div>
+
+    <div id="footer_container">
+        <div id=footer_links class="footer_container">
+            <a href="">About</a>
+            <a href="">FAQ</a>
+            <a href="">Support</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div id="footer_buttons" class="footer_container">
+            <button id="youtube"></button>
+            <button id="twitter"></button>
+            <button id="linked_in"></button>
+            <button id="facebook"></button>
+            <button id="instagram"></button>
+        </div>
+        <div id="footer_policies" class="footer_container">
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+        </div>
+    </div>
+
+    
+
+    </body>
+</html>

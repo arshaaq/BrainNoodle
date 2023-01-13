@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff9e43;
+        filter: url(#filter-chain-1);
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #393939;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="5.406" dy="25.432" in="SourceAlpha"/>
+      <feGaussianBlur result="dropBlur"/>
+      <feFlood flood-color="#393939"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+      <feFlood flood-color="#ff4343"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="shadowed" result="solidFill"/>
+    </filter>
+  </defs>
+  <g>
+    <path d="M278.812,250.000 C267.696,247.510 284.204,66.143 227.812,75.000 C187.802,81.284 235.778,253.208 228.000,255.000 C221.555,256.485 184.838,69.415 146.812,87.000 C107.792,105.045 188.836,256.733 182.000,261.000 C174.820,265.482 123.140,156.344 93.000,177.000 C67.498,194.477 149.944,286.093 150.000,286.000 C149.774,286.376 183.812,425.000 183.812,425.000 L284.812,425.000 C284.812,425.000 444.487,235.809 418.000,216.000 C392.371,196.832 325.000,260.000 325.000,260.000 C325.000,260.000 370.604,79.148 331.812,78.000 C290.667,76.782 288.079,252.076 278.812,250.000 Z" class="cls-1"/>
+    <ellipse cx="244.5" cy="327.5" rx="50.5" ry="33.5" class="cls-2"/>
+    <circle cx="244.5" cy="327.5" r="29.063" class="cls-3"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+Worked on:
+Creating a functional website with:
+animations
+graphics
+header
+footer
+body
+text
+
+Needs Work:
+actually plan out how elements will look on mobile
+understand how position and sizing elements dynamically change
+be more fluent with gsap
