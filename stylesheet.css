@@ -212,7 +212,7 @@ transform: translateY(-10px);
   position: relative;
   overflow: hidden;
   min-width: 100vw;
-  min-height: 70vh;
+  min-height: 50rem;
   z-index: 1;
   padding-top: 10rem;
 }
@@ -224,7 +224,7 @@ transform: translateY(-10px);
   display: flex;
   justify-content: center;
 
-  overflow: hidden;
+  overflow: visible;
   
 }
 
@@ -352,22 +352,20 @@ width: 20rem;
 #benefits_container{
   display: flex;
   flex-direction: row;
-  height: 120rem;
+  height: 190rem;
   display: flex;
   justify-content: flex-start;
+  background-image: url("/UI elements/red_circle.svg");
+  background-size: 100%;
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-position-x: 50vw;
+
+  
 }
 
 #benefits_circle{
-  position: absolute;
-  background-color: var(--noodle_red);
-  padding-top: 15rem;
-  min-width: 100%;
-  height: 120rem;
-  clip-path: circle(40% at 100% 50%);
-  z-index: 0;
-
-  overflow-x: hidden;
-  justify-content: center;
+opacity: 0;
 }
 
 #benefits_list_container{
@@ -481,7 +479,7 @@ width: 100vw;
 height: 90rem;
 background-color: var(--noodle_orange);
 border-radius: 2em;
-overflow: hidden;
+overflow: visible;
 clip-path: inset(0 0 0 0%);
 transform: translateX(-25%);
 }
@@ -529,13 +527,20 @@ z-index: 1;
   width: 100vw;
   padding-top: 20rem;
   background-color: var(--main_color);
+  background-image: url("/UI elements/blue_triangle.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: 50vw;
+  background-position-y: 80%;
+
+
   
 }
  #end_text_container{
   position: relative;
   display: flex;
   align-items: flex-end;
-  width: 100vw;
+  min-width: 100vw;
   height: 100rem;
   text-align: center;
   
@@ -576,7 +581,7 @@ width: 20rem;
 #ratings_container{
   position: relative;
   bottom: 22rem;
-  width: 40rem;
+  width: 100vw;
   height: 40rem;
   z-index: 2;
   display: flex;
@@ -631,7 +636,7 @@ width: 20rem;
   width: 50%;
   height: 100rem;
   right: 0px;
-
+  z-index: 0;
 }
 
 #noodle_friends_container{
@@ -766,7 +771,7 @@ background-repeat: no-repeat;
                          "words";
     position: relative;
     overflow: hidden;
-    min-width: 110vw;
+    min-width: 100vw;
     min-height: 70vh;
     z-index: 1;
     padding-top: 10rem;
@@ -777,10 +782,10 @@ background-repeat: no-repeat;
   grid-area: image;
 
   position: relative;
-  height: 40vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+
   left: 10px;
 }
 
@@ -797,11 +802,8 @@ background-repeat: no-repeat;
 }
 
 #benefits_container {
-  display: flex;
-  flex-direction: row;
   height: 90rem;
-  display: flex;
-  justify-content: flex-start;
+
 }
 
 
@@ -811,22 +813,25 @@ background-repeat: no-repeat;
   flex-direction: column;
   row-gap: 50px;
   right: 80%;
+  width: 100vw;
 }
 
 #benefits_circle {
   position: relative;
   background-color: var(--noodle_red);
   left: 55%;
-  min-width: 100%;
+  max-width: 0px;
   height: 100rem;
   bottom: 200px;
-  clip-path: circle(50% at 100% 51%);
   z-index: 0;
   overflow-x: hidden;
 }
 
 #benefit_handeye, #benefit_critical, #benefit_thinking{
-  width: 1000px;
+  max-width: 100%;
+  flex-direction: column;
+  column-gap: 100px;
+  
 }
 
 #functions_container {
@@ -904,6 +909,7 @@ background-repeat: no-repeat;
 }
 
 #end_container {
+  position: relative;
   justify-content: flex-end;
   display: flex;
   flex-direction: column;
@@ -916,9 +922,9 @@ background-repeat: no-repeat;
 
 #end_text_grid {
   position: relative;
-  width: 70%;
+  width: 100vw;
   height: 61rem;
-  margin-left: 50;
+  margin-left: 0;
   margin-right: 0;
   display: flex;
   flex-direction: column;
@@ -940,7 +946,7 @@ background-repeat: no-repeat;
 #ratings_container {
   position: relative;
   bottom: 22rem;
-  width: 67rem;
+  width: 100vw;
   height: 40rem;
   z-index: 2;
   display: flex;
@@ -950,12 +956,7 @@ background-repeat: no-repeat;
   row-gap: 20px;
 }
 
-.rounded_triangle {
-  position: absolute;
-  width: 22%;
-  height: 100rem;
-  right: 0px;
-}
+
 
 
 }
