@@ -355,7 +355,7 @@ width: 20rem;
   height: 190rem;
   display: flex;
   justify-content: flex-start;
-  background-image: url("./UI elements/red_circle.svg");
+  background-image: url("UI elements/red_circle.svg");
   background-size: 100%;
   overflow: visible;
   background-repeat: no-repeat;
@@ -525,7 +525,7 @@ z-index: 1;
   width: 100vw;
   padding-top: 20rem;
   background-color: var(--main_color);
-  background-image: url("./UI elements/blue_triangle.svg");
+  background-image: url("UI elements/blue_triangle.svg");
   
   background-size: 100%;
   background-repeat: no-repeat;
